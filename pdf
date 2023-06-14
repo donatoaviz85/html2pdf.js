@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Apoiando Pessoas com Problemas Cardíacos</title>
+  <script src="html2pdf.js"></script>
+</head>
+<body>
+  <h1>Apoiando Pessoas com Problemas Cardíacos: Um Guia de Reciprocidade</h1>
+  
+  <!-- Conteúdo do guia... -->
+  
+  <button onclick="gerarPDF()">Baixar PDF</button>
+  
+  <script>
+    function gerarPDF() {
+      const element = document.body; // Ou selecione um elemento específico para converter em PDF
+      
+      html2pdf()
+        .from(element)
+        .save("guia_reciprocidade.pdf");
+    }
+  </script>
+</body>
+</html>
